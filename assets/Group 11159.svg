@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <rect width="25" height="25" fill="#4c006e" opacity="0.3" rx="5"/>
+    <g>
+        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5px" d="M17.189 18l-4.844 4.844L7.5 18" transform="translate(7.656 9.525) translate(-7.5 -18)"/>
+    </g>
+</svg>

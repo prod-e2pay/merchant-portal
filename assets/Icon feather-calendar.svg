@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.917" height="19.797" viewBox="0 0 17.917 19.797">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none}.cls-1,.cls-2{stroke:#7d00b5}.cls-1{stroke-linecap:round;stroke-linejoin:round}.cls-2{fill:#fff}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="Icon_feather-calendar" transform="translate(.5 .5)">
+        <path id="Path_2796" d="M6.38 6h13.158a1.88 1.88 0 0 1 1.88 1.88v13.158a1.88 1.88 0 0 1-1.88 1.88H6.38a1.88 1.88 0 0 1-1.88-1.88V7.88A1.88 1.88 0 0 1 6.38 6z" class="cls-1" transform="translate(-4.5 -4.12)"/>
+        <path id="Path_2797" d="M24 3v3.759" class="cls-1" transform="translate(-11.782 -3)"/>
+        <path id="Path_2798" d="M12 3v3.759" class="cls-1" transform="translate(-7.301 -3)"/>
+        <path id="Path_2799" d="M4.5 15h16.917" class="cls-1" transform="translate(-4.5 -7.481)"/>
+        <g id="Rectangle_1605" class="cls-2">
+            <path d="M0 0H4V4H0z" class="cls-3" transform="translate(3 11)"/>
+            <path d="M0.5 0.5H3.5V3.5H0.5z" class="cls-4" transform="translate(3 11)"/>
+        </g>
+        <g id="Rectangle_1606" class="cls-2">
+            <path d="M0 0H4V4H0z" class="cls-3" transform="translate(10 11)"/>
+            <path d="M0.5 0.5H3.5V3.5H0.5z" class="cls-4" transform="translate(10 11)"/>
+        </g>
+    </g>
+</svg>

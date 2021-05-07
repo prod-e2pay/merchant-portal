@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="26.462" viewBox="0 0 25 26.462">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2{stroke:#fff;stroke-linecap:round;stroke-width:1.5px;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="Group_11156" transform="translate(-473.485 -533.25)">
+        <path id="Rectangle_1407" d="M0 0H25V25H0z" class="cls-1" transform="translate(473.485 533.981)"/>
+        <g id="Group_11151" transform="translate(-24 158)">
+            <g id="Icon_feather-file" transform="translate(500 376)">
+                <path id="Path_2725" d="M17.233 3H8.5A2.5 2.5 0 0 0 6 5.5v19.97a2.5 2.5 0 0 0 2.5 2.5h14.973a2.5 2.5 0 0 0 2.5-2.5V11.737z" class="cls-2" transform="translate(-6 -3)"/>
+                <path id="Path_2726" d="M19.5 3v8.737h8.737" class="cls-2" transform="translate(-8.267 -3)"/>
+            </g>
+            <g id="Group_11150" transform="translate(504.606 388.067)">
+                <g id="Ellipse_186" class="cls-2">
+                    <ellipse cx="5.527" cy="5.066" rx="5.527" ry="5.066"/>
+                    <ellipse cx="5.527" cy="5.066" class="cls-1" rx="4.777" ry="4.316"/>
+                </g>
+                <path id="Line_405" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5px" d="M6.014 0L0 5.65" transform="translate(2.365 2.414)"/>
+            </g>
+        </g>
+    </g>
+</svg>
