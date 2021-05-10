@@ -54,7 +54,7 @@
 
     <section class="wrapper">
         <main>
-            <nav class="sidebar-settlement">
+            <nav class="sidebar-settlement refunds">
                 <div class="logo-e2pay" style="margin-bottom: 13.4px;">
                     <a href="">
                         <img src="./assets/Group 317.svg" alt="">
@@ -166,46 +166,38 @@
             </nav>
 
 
-            <article class="content-settlement">
+            <article class="content-refunds">
+                <div class="header-page d-flex breadcrumb-refunds">
+                    <a href="">
+                        <div class="home-logo"></div>
+                    </a>
+                    <nav class="title-page ml-2" style="margin-top: 3px;">
+                        <ol class="bread-nav">
+                            <li class="breadcrumb-item"><a href="#">Void</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Void</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="container-refunds">
+                    <div class="d-flex flex-wrap justify-content-between" style="margin-bottom: 32px;">
+                        <p class="title-refunds">Void</p>
+                        <div class="d-flex">
+                            <div class="d-flex transaction-status transaction-pending">
+                                <div class="numb-transaction pending">112</div>
+                                <div class="status-title">
+                                    <span style="display: block;">Void</span>
+                                    <span>On Progress</span>
+                                </div>
+                            </div>
+                            <div class="d-flex transaction-status transaction-success">
+                                <div class="numb-transaction success">12</div>
+                                <div class="status-title">
+                                    <span style="display: block;">Void</span>
+                                    <span>Complete</span>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="container-settlement">
-                    <p class="title-settlement">Settlement</p>
-                    <div class="d-flex flex-wrap justify-content-center" style="margin-bottom: 32px">
-                        <div class="d-flex transaction-status transaction-success">
-                            <div class="numb-transaction success">12</div>
-                            <div class="status-title">
-                                <span style="display: block;">Transaction</span>
-                                <span>Success</span>
-                            </div>
-                        </div>
-                        <div class="d-flex transaction-status transaction-pending">
-                            <div class="numb-transaction pending">112</div>
-                            <div class="status-title">
-                                <span style="display: block;">Transaction</span>
-                                <span>Pending</span>
-                            </div>
-                        </div>
-                        <div class="d-flex transaction-status transaction-failed">
-                            <div class="numb-transaction failed">112</div>
-                            <div class="status-title">
-                                <span style="display: block;">Transaction</span>
-                                <span>Failed</span>
-                            </div>
-                        </div>
-                        <div class="d-flex transaction-status transaction-refund">
-                            <div class="numb-transaction refund">12</div>
-                            <div class="status-title">
-                                <span style="display: block;">Transaction</span>
-                                <span>Refund</span>
-                            </div>
-                        </div>
-                        <div class="d-flex transaction-status transaction-void">
-                            <div class="numb-transaction void">12</div>
-                            <div class="status-title">
-                                <span style="display: block;">Transaction</span>
-                                <span>Void</span>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="d-flex subcontainer-settlement justify-content-between">
@@ -234,7 +226,7 @@
                         </div>
 
                         <div class="button-download dropdown" id="dropdownMenuButton" data-toggle="dropdown"
-                            data-display="static" aria-haspopup="true" aria-expanded="false">
+                            aria-haspopup="true" aria-expanded="false">
                             <button type="button">
                                 Download
                             </button>
@@ -248,61 +240,63 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter" id="collapseOne">
-                        <div class="d-flex form-accordion-filter">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <input type="text" placeholder="ID">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="text" placeholder="Merchant Transaction ID">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="text" placeholder="Method Transaction ID">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <input type="text" placeholder="Amount">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="text" placeholder="Currency">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="text" placeholder="Country">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div id="reportrange" style="margin-top: 23px;"
-                                            class="calendar-reportrange-filter filter calendar-settlement">
-                                            <img class="img-calendar" src="./assets/Icon feather-calendar.svg"
-                                                alt="">&nbsp;
-                                            <span></span> <i class="fa fa-chevron-down"></i>
+                        <div class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter"
+                            id="collapseOne">
+                            <div class="d-flex form-accordion-filter">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder="ID">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder="Merchant Transaction ID">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder="Method Transaction ID">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <input type="text" placeholder="Site Alias">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder="Amount">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder="Currency">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder="Country">
+                                        </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <button class="button-filter-apply">Apply</button>
-                                        <button class="button-filter-reset">Reset</button>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div id="reportrange" style="margin-top: 23px;"
+                                                class="calendar-reportrange-filter filter calendar-settlement">
+                                                <img class="img-calendar" src="./assets/Icon feather-calendar.svg"
+                                                    alt="">&nbsp;
+                                                <span></span> <i class="fa fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder="Site Alias">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button class="button-filter-apply">Apply</button>
+                                            <button class="button-filter-reset">Reset</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
 
 
                 </div>
 
-                <div class="table-responsive-sm table-responsive-lg">
+                <div class="table-responsive-sm table-responsive-lg table-refunds">
                     <table class="table table-settlement" style="border-collapse: separate;border-spacing: 0 15px;">
                         <thead>
                             <tr>
+                                <th scope="col" style="width: 108px;text-align: center;">Status</th>
                                 <th scope="col">ID</th>
                                 <th scope="col">TRX ID</th>
                                 <th scope="col">Date & Time</th>
@@ -311,209 +305,129 @@
                                 <th scope="col">Amount</th>
                                 <th scope="col">Channel Type</th>
                                 <th scope="col">Channel Name</th>
-                                <th scope="col" style="text-align: center;">Status</th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>0123</td>
-                                <td>P0609200016</td>
-                                <td>31 Okt 2020
-                                    <span>
-                                        17:35:51
-                                    </span>
-                                </td>
-                                <td>REFMECHANT01</td>
-                                <td>IDR</td>
-                                <td class="complete-text">256,000</td>
-                                <td>Virtual Account</td>
-                                <td>Permata</td>
-                                <td class="complete">
-                                    <div class="border-complete">
+                                <td>
+                                    <div class="border-void-complete">
                                         <div>Complete</div>
                                     </div>
                                 </td>
-                                <td>
-                                    <div class="threedots-dropdown">
-                                        <button type="button" class="threedots" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"></button>
-                                        <div class="dropdown-menu">
-                                            <button class="dropdown-item" type="button">
-                                                <div>Action</div>
-                                            </button>
-                                            <button class="dropdown-item" type="button">
-                                                <div>Void This</div>
-                                            </button>
-                                        </div>
-                                    </div>
+                                <td>0123</td>
+                                <td>P0609200016</td>
+                                <td>31 Okt 2020
+                                    <span>
+                                        17:35:51
+                                    </span>
                                 </td>
+                                <td>REFMECHANT01</td>
+                                <td>IDR</td>
+                                <td class="kelas256">256,000</td>
+                                <td>Virtual Account</td>
+                                <td>Permata</td>
+                                <td class="threedots" style="vertical-align: middle;"></td>
                             </tr>
                             <tr>
-                                <td>0123</td>
-                                <td>P0609200016</td>
-                                <td>31 Okt 2020
-                                    <span>
-                                        17:35:51
-                                    </span>
-                                </td>
-                                <td>REFMECHANT01</td>
-                                <td>IDR</td>
-                                <td class="pending-text">256,000</td>
-                                <td>Virtual Account</td>
-                                <td>Permata</td>
-                                <td class="pending">
-                                    <div class="border-pending">
-                                        <div>Pending</div>
-                                    </div>
-                                </td>
                                 <td>
-                                    <div class="threedots-dropdown">
-                                        <button type="button" class="threedots" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"></button>
-                                        <div class="dropdown-menu">
-                                            <button class="dropdown-item" type="button">
-                                                <div>Action</div>
-                                            </button>
-                                            <button class="dropdown-item" type="button">
-                                                <div>Void This</div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0123</td>
-                                <td>P0609200016</td>
-                                <td>31 Okt 2020
-                                    <span>
-                                        17:35:51
-                                    </span>
-                                </td>
-                                <td>REFMECHANT01</td>
-                                <td>IDR</td>
-                                <td class="failed-text">256,000</td>
-                                <td>Virtual Account</td>
-                                <td>Permata</td>
-                                <td class="failed">
-                                    <div class="border-failed">
-                                        <div>Failed</div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="threedots-dropdown">
-                                        <button type="button" class="threedots" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"></button>
-                                        <div class="dropdown-menu">
-                                            <button class="dropdown-item" type="button">
-                                                <div>Action</div>
-                                            </button>
-                                            <button class="dropdown-item" type="button">
-                                                <div>Void This</div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0123</td>
-                                <td>P0609200016</td>
-                                <td>31 Okt 2020
-                                    <span>
-                                        17:35:51
-                                    </span>
-                                </td>
-                                <td>REFMECHANT01</td>
-                                <td>IDR</td>
-                                <td class="refund-text">256,000</td>
-                                <td>Virtual Account</td>
-                                <td>Permata</td>
-                                <td class="refund">
-                                    <div class="border-refund">
-                                        <div>Refund</div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="threedots-dropdown">
-                                        <button type="button" class="threedots" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"></button>
-                                        <div class="dropdown-menu">
-                                            <button class="dropdown-item" type="button">
-                                                <div>Action</div>
-                                            </button>
-                                            <button class="dropdown-item" type="button">
-                                                <div>Void This</div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0123</td>
-                                <td>P0609200016</td>
-                                <td>31 Okt 2020
-                                    <span>
-                                        17:35:51
-                                    </span>
-                                </td>
-                                <td>REFMECHANT01</td>
-                                <td>IDR</td>
-                                <td class="void-text">256,000</td>
-                                <td>Virtual Account</td>
-                                <td>Permata</td>
-                                <td class="void">
-                                    <div class="border-void">
-                                        <div>Void</div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="threedots-dropdown">
-                                        <button type="button" class="threedots" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"></button>
-                                        <div class="dropdown-menu">
-                                            <button class="dropdown-item" type="button">
-                                                <div>Action</div>
-                                            </button>
-                                            <button class="dropdown-item" type="button">
-                                                <div>Void This</div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid red;">
-                                <td>0123</td>
-                                <td>P0609200016</td>
-                                <td>31 Okt 2020
-                                    <span>
-                                        17:35:51
-                                    </span>
-                                </td>
-                                <td>REFMECHANT01</td>
-                                <td>IDR</td>
-                                <td class="complete-text">256,000</td>
-                                <td>Virtual Account</td>
-                                <td>Permata</td>
-                                <td class="complete">
-                                    <div class="border-complete">
+                                    <div class="border-void-complete">
                                         <div>Complete</div>
                                     </div>
                                 </td>
+                                <td>0123</td>
+                                <td>P0609200016</td>
+                                <td>31 Okt 2020
+                                    <span>
+                                        17:35:51
+                                    </span>
+                                </td>
+                                <td>REFMECHANT01</td>
+                                <td>IDR</td>
+                                <td>256,000</td>
+                                <td>Virtual Account</td>
+                                <td>Permata</td>
+                                <td class="threedots" style="vertical-align: middle;"></td>
+                            </tr>
+                            <tr>
                                 <td>
-                                    <div class="threedots-dropdown">
-                                        <button type="button" class="threedots" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <button class="dropdown-item" type="button">
-                                                Action
-                                            </button>
-                                            <button class="dropdown-item" type="button">
-                                                <div>Void This</div>
-                                            </button>
-                                        </div>
+                                    <div class="border-void-complete">
+                                        <div>Complete</div>
                                     </div>
                                 </td>
+                                <td>0123</td>
+                                <td>P0609200016</td>
+                                <td>31 Okt 2020
+                                    <span>
+                                        17:35:51
+                                    </span>
+                                </td>
+                                <td>REFMECHANT01</td>
+                                <td>IDR</td>
+                                <td>256,000</td>
+                                <td>Virtual Account</td>
+                                <td>Permata</td>
+                                <td class="threedots" style="vertical-align: middle;"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="border-void-complete">
+                                        <div>Complete</div>
+                                    </div>
+                                </td>
+                                <td>0123</td>
+                                <td>P0609200016</td>
+                                <td>31 Okt 2020
+                                    <span>
+                                        17:35:51
+                                    </span>
+                                </td>
+                                <td>REFMECHANT01</td>
+                                <td>IDR</td>
+                                <td>256,000</td>
+                                <td>Virtual Account</td>
+                                <td>Permata</td>
+                                <td class="threedots" style="vertical-align: middle;"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="border-void-complete">
+                                        <div>Complete</div>
+                                    </div>
+                                </td>
+                                <td>0123</td>
+                                <td>P0609200016</td>
+                                <td>31 Okt 2020
+                                    <span>
+                                        17:35:51
+                                    </span>
+                                </td>
+                                <td>REFMECHANT01</td>
+                                <td>IDR</td>
+                                <td>256,000</td>
+                                <td>Virtual Account</td>
+                                <td>Permata</td>
+                                <td class="threedots" style="vertical-align: middle;"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="border-void-complete">
+                                        <div>Complete</div>
+                                    </div>
+                                </td>
+                                <td>0123</td>
+                                <td>P0609200016</td>
+                                <td>31 Okt 2020
+                                    <span>
+                                        17:35:51
+                                    </span>
+                                </td>
+                                <td>REFMECHANT01</td>
+                                <td>IDR</td>
+                                <td>256,000</td>
+                                <td>Virtual Account</td>
+                                <td>Permata</td>
+                                <td class="threedots" style="vertical-align: middle;"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -543,9 +457,6 @@
                         </ul>
                     </div>
                 </div>
-
-
-
             </article>
         </main>
     </section>
@@ -553,7 +464,6 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -566,6 +476,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

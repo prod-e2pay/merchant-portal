@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
@@ -211,12 +209,22 @@ main {
 }
 
 
-.calendar-reportrange {
+.calendar-reportrange, .calendar-reportrange-filter {
     border-radius: 25px;
-    /* width: 100%; */
     border: 1px solid #cfd1d4;
-    padding: 5px 10px;
+    padding: 6px 10px;
     cursor: pointer;
+    position: relative;
+}
+
+.calendar-reportrange::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f078';
+    font-weight: 900;
+    width: 35px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
 }
 
 .container-input .img-calendar {
@@ -973,7 +981,7 @@ table tbody td {
     /* sama seperti halaman channel */
     position: relative;
     width: 1017px;
-    height: 1184px;
+    height: 100%;
     background-color: #ffffff;
     transform: translateX(-15%);
     border-radius: 50px;
@@ -984,12 +992,12 @@ table tbody td {
 
 .sidebar-settlement {
     width: 412px;
-    height: 1184px;
+    height: 1215px;
     padding: 72px 145px 0 0;
     background-image: linear-gradient(14deg, #7d00b5, #aa1a83 100%);
     border-radius: 50px;
     position: relative;
-    margin: auto 0 auto auto;
+    margin: 0 0 auto auto;
     
     /* transition: 0.5s; */
 }
@@ -1034,13 +1042,12 @@ table tbody td {
 
 .container-settlement {
     width: 920px;
-    height: 319px;
+    /* height: 319px; */
     margin: 0 1px 40px 0;
     padding: 40px 6px 29px 24px;
     border-radius: 20px;
     box-shadow: 0 0 30px 0 rgba(46, 11, 126, 0.05);
     background-color: #ffffff;
-    /* border: solid; */
   }
 
 
@@ -1140,6 +1147,74 @@ table tbody td {
   outline: none;
 }
 
+.search-form .select-filter div {
+    padding: 8px 0 0 17.5px;
+}
+
+.search-form .select-filter::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f077';
+    font-weight: 900;
+    width: 35px;
+    font-size: 12px;
+    text-align: center;
+    right: 0;
+    top: 10px;
+    position: absolute;
+}
+
+.search-form .select-filter.collapsed::after{
+    content: '\f078';
+}
+
+.container-filter .search-form .select-filter {
+    background-color: #ecd9f4;
+    color: #7d00b5;
+}
+
+.container-filter .search-form .select-filter.collapsed {
+    background-color: #ffffff;
+}
+
+.search-form .select-filter::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f0b0';
+    font-weight: 900;
+    width: 35px;
+    font-size: 15px;
+    text-align: center;
+    left: 0;
+    top: 10px;
+    position: absolute;
+    color: #7d00b5;
+}
+
+
+/* .form-slidedown-filter .row {
+    display: none;
+} */
+
+
+.form-accordion-filter form input {
+    width: 273px;
+    height: 40px;
+    margin: 23px 24px 0 0;
+    padding: 9px 0 8px 21px;
+    border-radius: 25px;
+    border: solid 1px #cfd1d4;
+    background-color: #ffffff;
+}
+
+.form-accordion-filter form #reportrange {
+    width: 273px;
+    height: 40px;
+    margin: 23px 24px 0 0;
+    padding: 8px;
+    border-radius: 25px;
+    border: solid 1px #cfd1d4;
+    background-color: #ffffff;
+}
+
 .table-settlement {
     font-size: 14px;
 }
@@ -1216,7 +1291,6 @@ table tbody td {
     height: 38px;
     padding: 5px 0;
     text-align: center;
-    border: solid;
 }
 
 
@@ -1303,8 +1377,36 @@ table tbody td {
   text-align: center;
   border-radius: 25px;
   background-color: #7d00b5;
-
   cursor: pointer;
+}
+
+.button-filter-apply{
+  width: 112px;
+  height: 40px;
+  margin: 20px 23px 0 0;
+  opacity: 1;
+  border-radius: 25px;
+  background-color: #7d00b5;
+  border: none;
+  color: #ffffff;
+}
+
+.button-filter-reset {
+  width: 112px;
+  height: 40px;
+  margin: 16px 0 0 0;
+  padding: 8.5px 18.1px 8.5px 19px;
+  border-radius: 25px;
+  border: solid 1px #cfd1d4;
+  color: #7d00b5;
+}
+
+.container-filter .button-download::before{
+    content: '\f019';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: white;
+    position: relative;
 }
 
 .button-download button {
@@ -1426,6 +1528,53 @@ table tbody td {
 
 /******************************************************** Awal halaman Refunds ********************************************************/
 
+.breadcrumb-refunds {
+    margin-left: 26px;
+}
+
+.breadcrumb-refunds .home-logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #7d00b5;
+    background-image: url('/assets/Icon\ feather-home.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.breadcrumb-refunds .title-page .bread-nav li a:nth-child(1)  {
+    color: #7d00b5;
+    font-weight: bold;
+}
+
+.content-refunds {
+    position: relative;
+    width: 1017px;
+    height: 100%;
+    background-color: #ffffff;
+    transform: translateX(-15%);
+    border-radius: 50px;
+    padding: 53px 32px 36.5px 34px;
+    margin: auto auto auto 0;
+}
+
+.container-refunds {
+    width: 920px;
+    /* height: 245px; */
+    margin: 41px 1px 40px 0;
+    padding: 33px 1px 29px 26px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 rgba(46, 11, 126, 0.05);
+    background-color: #ffffff;
+}
+
+.title-refunds {
+    font-size: 25px;
+    font-weight: bold;
+    color: #272d3b;
+}
+
+
 .border-on-progress {
     width: 110px;
     height: 38px;
@@ -1441,3 +1590,60 @@ table tbody td {
     font-weight: bold;
 }
 /******************************************************** Akhir halaman Refunds ********************************************************/
+
+
+
+/******************************************************** Awal halaman Refunds ********************************************************/
+
+.border-void-complete {
+    width: 110px;
+    height: 38px;
+    background-color: rgba(91, 198, 116, 0.05);
+    color: rgba(91, 198, 116, 1);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.sidebar-settlement.refunds {
+    height: 1160px;
+}
+
+@media only screen and (max-width:768px) {
+    .content-refunds {
+        transform: translateX(0%);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        padding: 53px 0 41px 0;
+    }
+
+    .container-refunds {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-refunds .status-title {
+        margin-bottom: 10px;
+    }
+}
+
+/******************************************************** Akhir halaman Refunds ********************************************************/
+
+
+
+/******************************************************** Awal halaman Payment ********************************************************/
+
+@media only screen and (max-width:768px) {
+    .container-settlement .trans-rep {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.form-filter {
+    display: none !important;
+}
+/******************************************************** Akhir halaman Payment ********************************************************/
+

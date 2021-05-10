@@ -37,13 +37,13 @@
                     <a class="nav-link" href="channel.html">Channel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Payment</a>
+                    <a class="nav-link" href="payment.html">Payment</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="settlement.html">Settlement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Void</a>
+                    <a class="nav-link" href="void.html">Void</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="refunds.html">Refunds</a>
@@ -54,7 +54,7 @@
 
     <section class="wrapper">
         <main>
-            <nav class="sidebar-settlement">
+            <nav class="sidebar-settlement refunds">
                 <div class="logo-e2pay" style="margin-bottom: 13.4px;">
                     <a href="">
                         <img src="./assets/Group 317.svg" alt="">
@@ -97,7 +97,7 @@
                             </a>
                         </li>
                         <li class="d-flex align-items-center">
-                            <a href="#" class="d-flex">
+                            <a href="payment.html" class="d-flex">
                                 <span class="icon">
                                     <img src="./assets/Group 11155.svg" alt="">
                                 </span>
@@ -117,7 +117,7 @@
                             </a>
                         </li>
                         <li class="d-flex align-items-center">
-                            <a href="#" class="d-flex">
+                            <a href="void.html" class="d-flex">
                                 <span class="icon">
                                     <img src="./assets/Group 11157.svg" alt="">
                                 </span>
@@ -166,10 +166,21 @@
             </nav>
 
 
-            <article class="content-settlement">
-                <div class="container-settlement">
+            <article class="content-refunds">
+                <div class="header-page d-flex breadcrumb-refunds">
+                    <a href="">
+                        <div class="home-logo"></div>
+                    </a>
+                    <nav class="title-page ml-2" style="margin-top: 3px;">
+                        <ol class="bread-nav">
+                            <li class="breadcrumb-item"><a href="#">Refunds</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Refunds</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="container-refunds">
                     <div class="d-flex flex-wrap justify-content-between" style="margin-bottom: 32px;">
-                        <p class="title-settlement">Refunds</p>
+                        <p class="title-refunds">Refunds</p>
                         <div class="d-flex">
                             <div class="d-flex transaction-status transaction-success">
                                 <div class="numb-transaction success">12</div>
@@ -238,18 +249,17 @@
                         </div>
                         <div id="reportrange" class="calendar-reportrange calendar-settlement">
                             <img class="img-calendar" src="./assets/Icon feather-calendar.svg" alt="">&nbsp;
-                            <span></span> <i class="fa fa-chevron-down"></i>
+                            <span></span>
                         </div>
                     </div>
 
                     <div class="d-flex flex-wrap justify-content-between container-filter">
-                        <div class="search-form d-flex">
-                            <select class="select-filter">
-                                <option value="trans-id">Filter</option>
-                                <option value="select-1">Select 1</option>
-                                <option value="select-2">Select 2</option>
-                                <option value="select-3">Select 3</option>
-                            </select>
+                        <div class="search-form accord d-flex">
+                            <div class="select-filter accordion collapsed" id="accordionFilter" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                style="position: relative;">
+                                <div>Filter</div>
+                            </div>
                         </div>
 
                         <div class="button-download dropdown" id="dropdownMenuButton" data-toggle="dropdown"
@@ -269,6 +279,51 @@
                         </div>
                     </div>
 
+                    <div class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter" id="collapseOne">
+                        <div class="d-flex form-accordion-filter">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="ID">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Merchant Transaction ID">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Method Transaction ID">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Amount">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Currency">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Country">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div id="reportrange" style="margin-top: 23px;"
+                                            class="calendar-reportrange-filter filter calendar-settlement">
+                                            <img class="img-calendar" src="./assets/Icon feather-calendar.svg"
+                                                alt="">&nbsp;
+                                            <span></span> <i class="fa fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Site Alias">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="button-filter-apply">Apply</button>
+                                        <button class="button-filter-reset">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -420,7 +475,7 @@
                             <li class="btn btn-prev">
                                 <span>
                                     <i class="fas fa-angle-left"></i>
-                                    Prev
+                                    First
                                 </span>
                             </li>
                             <li class="numb active">1</li>
@@ -431,7 +486,7 @@
                             <li class="btn btn-next">
                                 <span>
                                     <i class="fas fa-angle-right"></i>
-                                    Next
+                                    Last
                                 </span>
                             </li>
                         </ul>
